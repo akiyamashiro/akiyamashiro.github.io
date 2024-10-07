@@ -206,6 +206,25 @@
 
 <!-- TODO 根据theme.comment的内容进行入口选择 -->
 
+    <!-- 因为gitment里面也有gitment-container，所以这里就改为gitment-comment -->
+<div class="gitment-comment">
+    <div id="container"></div>
+</div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        // id default is location.href
+        owner: 'akiyamashiro',
+        repo: 'blogcomment',
+        oauth: {
+            client_id: 'Ov23liO81Whn2cKNQOXm',
+            client_secret: '2f97b4b2bd8228a33b81dafaeca53a8e92836faa',
+        },
+    })
+    gitment.render('container')
+</script>
+    
 
 
         </div>
@@ -337,7 +356,7 @@
         
         <li>
             <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/friend_links.jpg">
+            <img src="/images/friend_links.jpg ">
             <a href="https://github.com/ZEROKISEKI" target="_blank">ANOSORA(主题原作者)</a>
         </li>
         
