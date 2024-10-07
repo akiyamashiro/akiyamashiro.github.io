@@ -199,6 +199,13 @@
 <div class="cube-article-nav">
     <ul>
         
+        <li class="prev">
+            <a href="/2024/10/07/posttest/">
+                <i class="cube-icon cube-prev" aria-hidden="true"></i>
+                posttest
+            </a>
+        </li>
+        
         
     </ul>
 </div>
@@ -206,25 +213,23 @@
 
 <!-- TODO 根据theme.comment的内容进行入口选择 -->
 
-    <!-- 因为gitment里面也有gitment-container，所以这里就改为gitment-comment -->
-<div class="gitment-comment">
-    <div id="container"></div>
-</div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-        // id default is location.href
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk@latest/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<script src="https://priesttomb.github.io/js/md5.min.js"></script>
+<script type="text/javascript">
+    new Gitalk({
+        clientID: 'Ov23liO81Whn2cKNQOXm',
+        clientSecret: '85d5642fc4b21f9814e89e7cf3e168dadf115d16',
+        repo: 'akiyamashiro.github.io',
         owner: 'akiyamashiro',
-        repo: 'blogcomment',
-        oauth: {
-            client_id: 'Ov23liO81Whn2cKNQOXm',
-            client_secret: '2f97b4b2bd8228a33b81dafaeca53a8e92836faa',
-        },
-    })
-    gitment.render('container')
+        admin: 'akiyamashiro',
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    }).render('gitalk-container')
 </script>
-    
+
+
 
 
         </div>
@@ -266,7 +271,7 @@
     <a title="在此记录闲杂事情">在此记录闲杂事情</a>
     
     <div class="count">
-        <a class="count articles"><span>1</span>文章</a>
+        <a class="count articles"><span>2</span>文章</a>
         <a class="count tags"><span>0</span>标签</a>
         <a class="count categories"><span>0</span>分类</a>
     </div>
@@ -305,10 +310,23 @@
                     <span>1</span>
                 </p>
                 <p class="title">
-                    <a href="/2024/10/04/hello-world/" title="Hello World">Hello World</a>
+                    <a href="/2024/10/07/posttest/" title="posttest">posttest</a>
                 </p>
             </div>
             
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>2</span>
+                </p>
+                <p class="title">
+                    <a href="/2024/10/04/hello-world/" title="Hello World">Hello World</a>
+                </p>
+            </div>
         </li>
         
         
